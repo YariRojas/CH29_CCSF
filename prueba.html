@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scr/css/style2">
+    <title>Document</title>
+    <style>
+
+    .header{
+        grid-area: header;
+    }
+          @media (min-width: 481px){
+ 
+ .grid-container{
+     grid-template-columns: 200px auto;
+     grid-template-rows: 100px 50px auto 100px 100px 100px;
+     grid-template-areas: 
+     "header header"
+     "quienes-somos galeria-uno"
+     "mision-vision mision-vision"
+     "horarioAtencion horarioAtencion"
+     "contactanos contactanos"
+     "galeria-dos galeria-dos";
+ }
+}
+
+    </style>
+</head>
+<body class="grid-container">
+    <div class="header" style="background-color: aqua;">
+    </div>
+    <div class="quienes-somos" style="background-color: aqua;">
+    </div>
+    <div class="galeria-uno" style="background-color: aqua;">
+    </div>
+    <div class="mision-vision" style="background-color: aqua;">
+    </div>
+    <div class="horarioAtencion" style="background-color: aqua;">
+    </div>
+    <div class="contactanos" style="background-color: aqua;">
+    </div>
+    <div class="galería-dos" style="background-color: aqua;">
+    </div>
+
+    
+</body>
+</html>
