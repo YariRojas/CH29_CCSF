@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style2.css">
+    <title>PSICOSOCIAL</title>
+    <style>
+            nav{
+    background: linear-gradient(90deg, rgb(85, 170, 255),rgb(105, 210, 114),rgb(229, 159, 97), rgb(242, 93, 93));
+    padding: 10px;
+    text-align: right;
+    }
+    nav a{
+    color:aliceblue;
+    text-decoration: none;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    padding-right: 10px;
+    text-shadow: grey 5px 2px 3px;
+    }
+    .deps{
+        color: #f98a36;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    }
+    label{
+    color: #526d82;
+    text-align:center;
+    font-family: 'Poppins', sans-serif;
+}
+    </style>
+</head>
+<body>
+
+    <main> 
+        <img class="image" src="https://www.ccsf.org.mx/wp-content/uploads/2017/03/Logotipo-CCSF-horizontal-1.png" alt="centrocomunitario">
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="Formulario.html">Trabaja con nosotros </a>
+        <a href="tabla.html">Inscíbete</a>
+    </nav>
+  
+        <br>
+        <header>
+            <h1 class="deps">DESARROLLO PSICOSOCIAL</h1>
+        </header>
+        <br>
+    </main>
+    </nav>
+    <fieldset>
+        <h3 class="deps">Datos Personales</h3>
+        <label for="nombre">Nombre Completo: </label>
+        <input type="text" id="nombre">
+ <br>
+<br>
+        <label for="peso">Indica tu edad:</label>
+        <input type="number"required min="18" max="30">
+<br>
+<br>
+        <label for="descripcion">Ingresa tu telefono con clave lada: </label>
+        <input type="text"required minlength="10" maxlength="12">
+<br>
+<br>
+        <label for="nacionalidad">Selecciona tu Nacionalidad: </label>
+        <select name="nacionalidad" id="nacionalidad">
+        <option value="">Mexicana</option>
+        <option value="">Colombiana</option>
+        <option value="">Puertoriqueña</option>
+        <option value="">Venezolana</option>
+        </select>
+<br>
+<br>
+    <input type="radio"name="genero"id="mujer" value="mujer">
+    <label for="mujer">Mujer</label>
+    <input type="radio"name="genero"id="hombre" value="hombre">
+    <label for="hombre">Hombre</label>
+<br>
+<br>
+    <label for="ine">Sube tu INE</label>
+    <input type="file" id="ine">
+    </fieldset>
+<br>
+<br>
+<fieldset>
+    <h3 class="deps">Descripción: </h3>
+    <label for="hobbies">Selecciona tu hobbie favorito: </label>
+    <input type="checkbox"id="hobbies">Leer
+    <input type="checkbox">Viajar
+    <input type="checkbox">Nadar
+    <input type="checkbox">Salir con amigos
+    <input type="checkbox">Otro
+<br>
+<br>
+<h3 class="deps">Elige tu color favorito: </h3>
+<input type="color">
+<br>
+<br>
+    <h3 class="deps">Tenemos muchas actividades para ti</h3>
+    <!--Lista de datos-->
+    <label for="actividad">Qué curso te gustaría tomar:</label>
+    <input list="actividad" name="actividad">
+    <datalist id="actividad"> 
+    <option value="VIDA Y DUELO"></option>
+    <option value="MANEJO DE EMOCIONES"></option>
+    <option value="DESCUBRIENDO MIS HABILIDADES"></option>
+    </fieldset>
+<br>
+        <table border="7">
+            <tr> <!--FILAS-->
+                <th>Actividad</th>
+                <th>Lunes</th> <!--ENCABEZADO-->
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sábado</th>
+            </tr>
+            <tr>
+                <td>Vida y Duelo</td>
+                <td>3:00pm - 4:00 pm</td><!--COLUMNAS-->
+                <td></td>
+                <td>3:00pm - 4:00 pm</td>
+                <td></td>
+                <td>3:00pm - 4:00 pm</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Manejo de Emociones</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>4:30pm - 5:00pm</td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td>Descubriendo mis habilidades</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>11:00am - 12:00pm</td>
+            </tr>
+        </table>
+<br>
+<br>
+    <fieldset>
+    <h3 class="deps">Selecciona la opción que te agrade</h3>
+        <label for="date"><h3 class="deps">Indica la fecha y hora de inicio:</h3></label>
+        <input type="date">
+        <input type="time">
+    <br>
+    <button>Enviar</button>
+    
+</fieldset>
+<br>
+<fieldset>
+    <h3 class="deps">Cupo de los grupos: </h3>
+    <!--Barra de progreso-->
+    <label for="cupo">Vida y Duelo</label>
+    <progress min="1"max=100 value="20"></progress>
+    <br>
+    <label for="cupo">Manejo de Emociones</label>
+    <progress min="1"max=100 value="50"></progress>
+    <br>
+    <label for="cupo">Descubriendo mis habilidades</label>
+    <progress min="1"max=100 value="80">Pregreso de Ventas</progress>
+    </fieldset>
+    <br>
+</fieldset>
+
+
+</form>
+<nav>
+    <a href="tabla.html">Atrás</a>
+    </nav>
+    <br> 
+</body>
+</html>
