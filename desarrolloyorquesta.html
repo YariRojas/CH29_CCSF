@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto</title>
+        <link rel="stylesheet" href="../src/css/style2.css">
+        <style>
+            .datosPersonales{
+                position: absolute;
+                top: 280px;
+                left: 490px
+            }
+            nav{
+               background: linear-gradient(90deg, rgb(85, 170, 255),rgb(105, 210, 114),rgb(229, 159, 97), rgb(242, 93, 93));
+               padding: 10px;
+               text-align: right;
+             }
+            nav a{
+                color:aliceblue;
+                text-decoration: none;
+                word-spacing: 5px;
+                letter-spacing: 5px;
+                padding-right: 10px;
+                text-shadow: grey 5px 2px 3px;
+                 }
+            .documentos{
+                position: absolute;
+                top: 432px;
+                left: 490px;
+            }
+
+            .actividades{
+                position: absolute;
+                top: 575px;
+                left: 490px;
+            }
+        
+            h1{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:white;
+                text-align: center;
+            }
+
+            h3{
+                color: #f98a36;
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+            }
+
+            div{
+                background-color: rgb(85, 170, 255);
+                padding: 7px;
+            }
+
+            html{
+                background-color: white;
+            }
+            label{
+                color: #526d82;
+                text-align:center;
+                font-family: 'Poppins', sans-serif;
+                 }
+            fieldset{
+                border: #6527BE solid 1px;
+            }
+            nav{
+    background: linear-gradient(90deg, rgb(85, 170, 255),rgb(105, 210, 114),rgb(229, 159, 97), rgb(242, 93, 93));
+    padding: 10px;
+    text-align: right;
+    }
+            button{
+    background-color: rgb(85, 170, 255);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:600;
+    border-radius: 15%;
+    height: 30px;
+    width: 80px;
+    margin-left: 50%;
+}
+
+            footer{
+                font-size: smaller;
+                margin-left: 42%;
+            }
+        </style>
+            
+    </head>
+
+    <body>
+        <img class="image" src="https://www.ccsf.org.mx/wp-content/uploads/2017/03/Logotipo-CCSF-horizontal-1.png" alt="centrocomunitario">
+        <nav>
+             <a href="index.html">Inicio</a>
+             <a href="actividades.html">Actividades</a>
+             <a href="contacto.html">Contacto</a>
+             <a href="Formulario.html">Trabaja con nosotros </a>
+             <a href="tabla.html">Inscíbete</a> 
+         </nav>
+        <div>
+            <h1>Desarrollo y orquesta</h1>
+        </div>
+
+        <form>
+            <fieldset>
+                <h3>Datos Personales</h3>
+                <label for="nombre" required min="12" max="50">Nombre completo: </label>
+                <input type="text" id="nombre">
+                <br>
+                <label for="edad" required min="12">Indica tu edad</label>
+                <input type="text" required min="18" id="edad">
+                <br>
+                <label for="telefono">Ingresa tu teléfono con clave lada</label>
+                <input type="text" id="telefono">
+                <br>
+                <label for="email" required min="11">Ingresa tu email</label>
+                <input type="text" id="telefono">
+                <br>
+                <label for="genero">Selecicona tu género:</label>
+                <input type="radio" name="genero" id="mujer" value="mujer">
+                <label for="mujer">Mujer</label>
+                <input type="radio" name="genero" id="hombre" value="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="genero" id="otro" value="otro">
+                <label for="otro">Otro</label>
+                <img class="datosPersonales" src="https://musicanddynamics.com/wp-content/uploads/2021/05/iniciacion-musical-ninos.jpg" alt="Iniciacion muical" height="100px">
+            </fieldset>
+
+            <fieldset>
+                <h3>Documentos</h3>
+                <label for="ine">Sube tu INE</label>
+                <input type="file" id="ine">
+                <br>
+                <label for="actividad">Selecciona tu nacionalidad</label>
+                <select name="Actividad" id="actividad">
+                    <option value="">Mexicana</option>
+                    <option value="">Estadounidense</option>
+                    <option value="">Colombiana</option>
+                </select>
+                <img class="documentos" src="https://brainsnursery.com/wp-content/uploads/2014/12/PORTADAS-BLOG-8.jpg" alt="Arte" height="100px">
+                <br>
+                
+
+                               
+            </fieldset>
+            <fieldset>
+                <h3>Actividades</h3>
+                <label for="hobby">Selecciona las actividades que te interesan:</label>
+                <br>
+                <input type="checkbox" id="leer">Iniciación musical (Martes y jueves de 12:00 pm a 1:00 pm)
+                <br>
+                <input type="checkbox" id="correr">Arte (Lunes y jueves de 2:00 pm a 3:00 pm)
+                <br>
+                <input type="checkbox" id="cocinar">Repostería (Martes y viernes de 1:00 pm a 2:00 pm)
+                <br>
+                <img class="actividades" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuXV4Ng2L8odFAE_C1ninkhogpWPAorqkGbg&usqp=CAU" alt="reposteria" height="90px">
+            </fieldset>
+
+            <br>
+            <button>Enviar</button>
+           
+        </form> 
+        <main> 
+                <nav>
+                <a href="tabla.html">Atrás</a>
+                </nav>
+                <br>
+            </main>
+        <br>
+    </body>
+    <footer>2023 Centro comunitario Santa Fe</footer>
+
+</html>
