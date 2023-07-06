@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style2.css">
+    <title>Salud</title>
+  <style>
+    .salud{
+    color: #f98a36;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    background: linear-gradient(90deg, rgb(85, 170, 255),rgb(105, 210, 114),rgb(229, 159, 97), rgb(242, 93, 93));
+    padding: 10px;
+    text-align: right;
+    }
+nav a{
+    color:aliceblue;
+    text-decoration: none;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    padding-right: 10px;
+    text-shadow: grey 5px 2px 3px;
+    }
+.four{
+        color: #526d82;
+    text-align:center;
+    font-family: 'Poppins', sans-serif;
+    }
+button{
+    background-color: rgb(85, 170, 255);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:600;
+    border-radius: 15%;
+    height: 30px;
+    width: 80px;
+    margin-left: 50%;
+}
+  </style>
+
+</head>
+<body>
+    <img class="image" src="https://www.ccsf.org.mx/wp-content/uploads/2017/03/Logotipo-CCSF-horizontal-1.png" alt="centrocomunitario">
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="actividades.html">Actividades</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="Formulario.html">Trabaja con nosotros </a>
+        <a href="tabla.html">Inscíbete</a>
+    </nav>
+    <form>
+        <fieldset>
+
+          <h1 class="salud">Salud</h1>
+          <label for="nombre" class="four">Nombre completo</label>
+          <input type="text" id="nombre">
+          <br>
+          <label for="edad" class="four">Ingresa tu edad actual</label>
+          <input type="text" id="edad">
+          <br>
+          <label for="telefono" class="four">Ingresa tu telefono con clave lada</label>
+          <input type="text" id="telefono">
+        </fieldset>
+        <fieldset>
+          <label for="elige el tipo de consulta" class="four">Elige el tipo de consulta</label>
+          <select name="Tipo de consulta" id="Tipo de consulta">
+              <option value="">Salud y Educación Sexual</option>
+              <option value="">Nutrición</option>
+              <option value="">Salud Mental</option>
+              <option value="">Acondicionamiento Físico</option>
+          </select>
+          <br>
+          <label for="Horario" class="four">Selecciona el horario</label>
+          <input type="checkbox" id="Horario" >Lunes 9:00am - 11:00am
+          <input type="checkbox" >Miercoles 10:00am - 12:00pm
+          <input type="checkbox" >Viernes 12:00 - 2:00pm
+        </fieldset>
+        <input type="radio" name="genero" id="mujer" value="mujer">
+        <label for="mujer" class="four">Mujer</label>
+        <input type="radio" name="genero" id="hombre" value="hombre">
+        <label for="hombre" class="four">Hombre</label>
+        <input type="radio" name="genero" id="persona no binaria" value="persona no binaria">
+        <label for="persona no binaria" class="four">Persona no binaria</label>
+        <br>
+        <button>Enviar</button>
+    
+            <main> 
+                <nav>
+                <a href="tabla.html">Atrás</a>
+                </nav>
+                <br>
+            </main>
+</body>
+</html>
