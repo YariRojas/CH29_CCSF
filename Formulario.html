@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style2.css">
+    <title>Formulario</title>
+<style>
+    nav{
+    background: linear-gradient(90deg, rgb(85, 170, 255),rgb(105, 210, 114),rgb(229, 159, 97), rgb(242, 93, 93));
+    padding: 20px; 
+    text-align: right;
+    }
+</style>
+</head>
+<body>
+    <main> 
+        
+            <img class="image" src="https://www.ccsf.org.mx/wp-content/uploads/2017/03/Logotipo-CCSF-horizontal-1.png" alt="centrocomunitario">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="actividades.html">Actividades</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="Formulario.html">Trabaja con nosotros </a>
+                <a href="tabla.html">Inscíbete</a>
+        </nav>
+        <br>
+        <fieldset>
+            <section>
+                <fieldset>
+                <h1>SÉ PARTE DE NUESTRA COMUNIDAD</h1>
+                
+                    <h1>Formulario</h1>
+                    <label for="Actividades" class="Two">¿Con cuál actividad deseas apoyarnos?</label>
+                    <input list="Actividades" name="Actividades">
+                                <datalist id="Actividades">
+                                    <option value="Consultas médicas">Consultas médicas</option>
+                                    <option value="Nutrición">Nutrición</option>
+                                    <option value="Acondicionamiento físico">Acondicionamiento físico</option>
+                                    <option value="Computación Básica">Computación Básica</option>
+                                    <option value="Mentorías">Mentorías</option>
+                                    <option value="Regularización primaria">Regularización primaria</option>
+                                    <option value="Vida y Duelo">Vida y Duelo</option>
+                                    <option value="Manejo de Emociones">Manejo de Emociones</option>
+                                    <option value="Descubriendo mis habilidades">Descubriendo mis habilidades</option>
+                                    <option value="Iniciación Musical">Iniciación Musical</option>
+                                    <option value="Arte">Arte</option>
+                                    <option value="Repostería">Repostería</option>
+                                </datalist>
+                                <br>
+                                <br>
+                                <label for="Text" class="Two"> Deseamos conocer mejor tu perfil, cuéntanos ¿por qué te interesa impartir esta actividad?  </label>
+                                <input type="text" required minlength="10" maxlength="300">
+                                <br>
+                                <br>
+                                <label for="nombre" class="Two">Nombre: </label>
+                <input type="text" id="nombre">
+                                <label for="Edad" class="Two">Teléfono</label>
+                                <input type="text" required minlength="6" maxlength="6">
+                                <br>
+                                <br>
+                                <label for="email" class="Two">Por favor, compártenos tu correo electrónico</label>
+                                <input type="email">
+                <br>
+                <br>
+                <label for="nacionalidad" class="Two">Nacionalidad: </label>
+                <select name="nacionalidad" id="nacionalidad">
+                    <option value="">Mexicana</option>
+                    <option value="">Colombiana</option>
+                    <option value="">Puertoriqueña</option>
+                    <option value="">Venezolana</option>
+                </select>
+                <br>
+                <br>
+                <label for="hobbies" class="Two">Selecciona tu área de interés: </label>
+                <input type="checkbox"id="hobbies">Educación
+                <input type="checkbox">Desarrollo
+                <input type="checkbox">Salud
+                <input type="checkbox">Psicosocial
+                <br>
+                <br>
+                 <button>Enviar</button>
+                
+            </fieldset>
+            <nav>
+                
+              </nav> 
+</body>
+</html>
